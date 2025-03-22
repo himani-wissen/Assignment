@@ -1,0 +1,510 @@
+web development- Web development is the process of building websites and web applications for the internet or intranet.
+
+it includes web design, web programming and database management.
+
+website- static content, read only like Wikipedia, blogs
+
+web apps- dynamic content, something user can interact with example- linkedin
+
+depending on use-case and user requirement or need we can create either website or web-app
+
+web- is a system where documents and resources are in interconnected form which can be accessed using the internet.
+
+web-app= frontend= ui= html/css/ javascript and react
+
+backend= brain of web-app= all the logic of the functionality
+
+database management= handle, store and manipulate data from the web app- sql and NoSQL.
+
+all these 3 components make up the full stack web development
+
+MERN STACK
+mongodb
+express.js- layer in node.js it's a subset of nodejs
+react- library to create front end
+nodejs
+
+--------------------------------------------------
+network- multiple resources or machines connected together to communicate, resource sharing can be wired or wireless.
+LAN- Local Area Network- small area network. within a room, building
+MAN- Metropolitan area network- delhi, Mumbai, pune
+WAN- wide area network= india, Nepal, sri lanka
+Internet= global system which is a network of networks. global entity where millions of devices are interconnected to each other.
+www= world wide web= where interconnected documents and resources exist which can be accessed using internet.
+IP Address- for two or more machines to communicate with each other, they each have to have an address.
+Browser- its a tool which is used to access the documents, resources, websites, web-apps. ex= google chrome, safari, opera, moz. firefox
+Browser engine=  browser engine is the core part of a web browser that takes the code of a webpage (HTML, CSS, JavaScript) and turns it into what you see and interact with on your screen. It interprets and renders web pages.
+Examples of Browser Engines:
+Blink – Used by Google Chrome, Microsoft Edge (new versions), and Opera.
+Gecko – Used by Mozilla Firefox.
+WebKit – Used by Apple Safari.
+Trident – Used by older versions of Internet Explorer.
+Presto – Used by older versions of Opera.
+In simple terms, if a web browser were a restaurant, the browser engine would be the chef—it takes the raw ingredients (website code) and prepares a final dish (the web page you see). 
+Client= a machine that sends a request. laptop, pc, mobile, browser, app, cli
+server= a machine that holds a lot of resources of data and handles responses. ex= database server, file server, app server. user server, email server
+DNS Server= to convert domain names to IP Address.
+
+internet means interconnected networks. global system of network of networks.
+earlier known as arpanet.
+protocol- set of rules followed all over the world.
+TCP- port no. tells who to interact with which part
+IP- address
+packet- small chunks of files to transfer file.
+How the Internet Works (Step-by-Step) 🚀
+Step 1: You Request a Website
+When you type www.google.com into your browser and press Enter, your device sends a request to find Google’s website.
+
+Step 2: Your Request is Sent to a DNS Server
+The Domain Name System (DNS) is like a phonebook for the internet.
+It converts human-readable website names (google.com) into IP addresses (like 142.250.182.78).
+Your request is then forwarded to this IP address.
+
+Step 3: Your Request Travels Through the Network
+Your request is broken into small pieces of data (packets) and travels through multiple network devices (routers, switches, and fiber optic cables) across the internet.
+
+Step 4: The Website’s Server Processes Your Request
+Google’s server receives your request and prepares the webpage you want to visit. It then sends the data back to you in packets.
+
+Step 5: Data Packets Reach You & The Website Loads
+The data packets travel back to your device through the fastest possible route. Once they reach your browser, they are reassembled to display the website properly.
+
+3. Key Technologies Behind the Internet
+a) IP Addresses (Internet Protocol Address) 🏠
+Every device on the internet has a unique ID called an IP address (e.g., 192.168.1.1).
+IP addresses help computers find and talk to each other.
+b) TCP/IP Protocol 📦
+The Transmission Control Protocol (TCP) and Internet Protocol (IP) ensure that:
+
+Data is divided into packets before being sent.
+Packets reach the correct destination in the right order.
+Lost packets are retransmitted if needed.
+c) Fiber Optic Cables & Undersea Cables 🌊
+The internet uses fiber optic cables to transfer data at high speeds.
+Most international data travels through undersea cables connecting different continents.
+
+how two applications interact with each other?
+application layer
+tcp
+ip
+hardware
+--------------------------------------
+emmet is a software plugin for html shortcuts already in vs code extension p>p>p (>=nested), (*= times), (#= create id), (.= create class).
+semantic tags defines the meaning of the content ex- header, footer, nav.
+structural tags define the basic layout and structure of the webpage ex- div, span, section
+formatting tags control the visual appearance of text and elements ex- bold, Italic, underline
+
+div- non semantic tag- group elements together and division created in webpage
+block element- takes space always from left to right, takes next line
+inline-doesn't take entire width.
+--------------------------------------------
+tables- structure which contains arrangement of data in rows and columns
+td- table data
+<table>
+<thead>- headings
+<tbody>- actual content
+<tfoot>- summarization
+<tr> table row
+<th> to give heading in thead
+---------------------------------
+forms- to take input from users or collect
+<form>
+<label>- to give label to fields
+label attributes "for" tag should always be equal to the inputs id attribute so that options and the button are connected and linked.
+<input type= "submit">
+default type is text.
+if type is radio then you can create a radio check
+type= checkbox
+type= date for calendar
+id is always unique
+placeholder attribute is a faded text which acts as a helping text to enter in the field
+read more from mdn html forms for the entire documentation
+textArea- multi line text input from user
+fieldset- to group related text 
+legend- to give caption 
+<select> = <options>= dropdown
+<button>
+iframes= inline frames its an html element that allows you to embed another webpage inside ur current webpage
+
+elements in head tag aren't visible
+
+only content in body tag is visible
+
+<head>-> <title>= gives heading to the browser tab
+favicon= icon in the tab using <link rel="">
+link rel to link css stylesheet
+<script src=""> tag to link javascript
+SEO= search engine optimization
+meta charset= character encoding popular utf-8 supports multiple languages
+meta http equiv= uniformity established where every rendering engine shows same output
+viewport= visible area of the webpage on user's screen. to fix the sizing of the webpage
+------------------------------------------------------------------------
+BoxModel= browser renders any content in rectangle
+it consists of content, padding, border, margin
+
+css  by default is static
+relative position an element on ur current window by using left right top bottom
+
+absolute- closest positioned parent relative
+
+fixed- element stays fixed
+
+sticky- an element is on a position fixed when it is in its parent but as soon as parent changes it's no longer displayed
+
+Flexbox- important concept in terms of layout-ing- positioning different components- can do vertical or horizontal layout- flexibility to place components, parent container- flex, multiple items- flex item, main axis- horizontal axis, cross axis- vertical axis.
+display: flex, by default direction is row, flex-direction: column, row-reverse, column-reverse
+------------------------------------------------------------
+media-query= to make website responsive
+in css style tag write @media (max-width:500px), max-width states that below this width configuration will apply and opposite for min width
+css grid- to create layout in form of rows and columns 2 dimensional structure. parent- container- display:grid
+it has a lot of child items.
+------------------------------------------------------
+javascript takes care of the behaviour, functioning. it's a scripting language- scripting is nothing but a set of instructions, lightweight programming language. any behaviour can be run on client side.
+node is c++ program plus javascript functionalities to be executed on backend side.
+ECMA - is a specification or standardization
+javascript is an implementation of these standards.
+script tag is added in the end to ensure all ui is rendered first.
+script src="index.js"
+
+variables are just named memory locations
+var- globally scoped or functionally scoped. not used anymore but cannot be block-scoped. because in es6 let and const were introduced.
+
+let- no debugging issues, block-scoped, can be re-assigned but not re-defined. dynamically typed language. u can assign any datatype in it. 
+const- block scoped 
+camelcase- words in a phrase are combined without any space between them. first word is lowercase, next words initial is capital.
+data types- primitive- types that javascript provides us with- number, string, Boolean, undefined, null, bigint, symbol
+non-primitive- arrays, objects.
+--------------------------------
+arrow functions---
+let getExp= (x,y) => {
+	let ans= x**y;
+	return ans;
+}
+
+------------------------
+objects- collection of key-value pairs
+let obj = 
+{	name: "himani";
+	"full name": "himani goel"
+	};
+arrays- collection of items/ elements.
+--------------------------------------
+hoisting- all our variable declaration and function declarations are moved to the top in its current scope.
+variable hoisting- declaration is moved to top not its definition.
+function hoisting- function declaration and definition both things are moved to the top.
+it won't work for function expression, it gives reference error.
+function sayMyName(finalName)() {
+	console.log(finalName);
+}
+sayMyName("Himani");
+
+functions- first class citizens- functions can be assigned to variables, they can be as argument, return function, use function in data structure, define as property.
+
+function assigned to variables--
+let greet= function() {
+ 
+	console.log("hello");
+}
+greet();
+
+function passed as an arguement---
+
+function greetMe(greet, fullName) {
+	console.log("hello", fullName);
+	greet();
+}
+
+greetMe(greet, "Himani");
+
+returned as function--
+function solve(number) {
+	return function(number) {
+		return number*number;
+	}
+}
+let ans= solve(5);
+console.log(ans);
+
+function stored in data structure--
+let arr= [
+	function(a,b) {
+	return a+b;
+	}
+	function(a,b) {
+	return a-b;
+	}
+	function(a,b) {
+	return a*b;
+	}
+]
+
+let first= arr[0];
+let ans= first(5,10);
+console.log(ans);
+
+function as a property
+
+let obj= {
+	age:25,
+	name: "himani",
+	greet: ()=> {
+	console.log("Hello, welcome!");
+	}
+}
+console.log(obj.age);
+obj.greet();
+---------------------------------------------
+
+variable scoping- global
+		function
+		block
+var can't be block-scoped as it will leak out of it and will behave as if it is global scoped.
+let and const can't be entirely global as they don't attach to the window object. window object represents browser windows and provides access to global variables, functions and the DOM.
+
+Scope Type	var	let	const
+Global Scope	✅ Yes (attaches to window)	✅ Yes (does NOT attach to window)	✅ Yes (does NOT attach to window)
+Function Scope	✅ Yes	✅ Yes (if declared inside function)	✅ Yes (if declared inside function)
+Block Scope (if, for, {})	❌ No	✅ Yes	✅ Yes
+
+Temporal Dead Zone-- where accessing the value of a variable isn't possible. the variable exists but accessing it's value is impossible.
+variable is created using let and const after hoisting the definition isn't hoisted
+
+Variable Type	Hoisted?	Declaration Hoisted?	Definition Hoisted?	Can You Use It Before Declaration?
+var	✅ Yes	✅ Yes	✅ Yes (initialized as undefined)	✅ Yes (but value will be undefined)
+let	✅ Yes	✅ Yes	❌ No (remains in Temporal Dead Zone)	❌ No (throws ReferenceError)
+const	✅ Yes	✅ Yes	❌ No (remains in Temporal Dead Zone)	❌ No (throws ReferenceError)
+
+---------------------------------------------------
+classes- blueprint of an entity where we get the state or the properties and it's behaviour or functionality. we access all this using dot operator.
+Human a= new Human()
+
+class Human {
+	age= 13;
+	#wt= 80;
+	ht=180;
+
+	walking(){
+		console.log("I am walking", this.#wt);
+	}
+	running(){
+		console.log("I am running");
+	}
+}
+
+let obj= new Human();
+console.log(obj.age);
+obj.walking();
+obj.(#wt)
+default= public
+to mark private we have to mark it with hashtag
+
+this-- represents the current object
+to access private attributes we can use getters and setters- it adds encapsulation, an abstract layer is also added, it gives more semantic clarity by understanding that these functions' purpose would be xyz.
+getters- functions used to fetch values
+setters- functions used to set values, modify.
+
+get fetchWeight() {
+	return this.#wt;
+}
+set modifyWeight(let val) {
+	this.#wt= val;
+} 
+
+constructor is a special function that is used to initialize values. 
+constructor(newAge, newHeight) {
+
+	this.age= newAge;
+	this.ht= newHeight;
+}
+
+let obj= new Human(50, 190, 101);
+
+Default Parameters- allow to use functions with default values.
+in case we forget to give an argument at the time of function call, it will print a default value. Use case- to be used when value isn't provided.
+
+function sayName(myName= "Prabhu Deva") {
+	console.log("my name is: ", myName);
+}
+
+sayName();
+
+dependent parameters- function sayName(fName= "Uday", lName= fname.toUpperCase()) 
+in case lname isn't given it will use default parameters.
+we can even pass object as default parameter. we can give arguement as null and it will print null only, but if we give undefined then the default parameter will be printed.
+we can even pass function as default parameter.
+
+------------------------
+in-built objects
+math object
+Math.PI;
+Math.max()
+Math.min()
+Math.round()
+Math.floor()
+Math.abs()- negative to positive
+Date object
+---------------------------
+how to clone object- 3 ways- spread operator let newobj= (...objname), assign method newobj= object.assign({}, objname), iteration using for loop for(key in src) { let newKey= key; newValue= src[key]; dest[newKey]= newValue;}
+dynamic nature of object: we can add new properties to objects at runtime.
+
+3 types of for loops
+for...in	Iterating over object keys	Objects
+for...of	Iterating over values	Arrays, strings, sets, maps
+forEach()	Applying a function to each element
+
+Garbage Collector (gc)- memory that is no longer used can be freed using this tool. it improves performance, memory leaks. it keeps running in background.
+Error Handling- what is an error? due to some reason because of which the normal flow of execution is disrupted.
+compile-time errors- can be caught while the code is being parsed
+//syntax error
+run-time errors- when code is being executed.
+//reference error- when variable isn't defined but console.logged
+
+error handling-
+try-catch block- 
+	try{
+		console.log(x);
+	}
+	catch(error){
+		//define what to do with error
+		//retry logic
+		//fallback mechanism
+		//custom error
+		//console.log(e);
+	}
+
+finally block- this will run every time, doesn't depend on error
+finally{
+	}
+
+custom error- using throw keyword, govt api has own errors so to let user interpret it. it's used under the catch block
+------------------------------------------------------------------
+window object is a global object which is above all root elements at top of hierarchy. nothing is above it. all global variables are its properties and all global functions are it's behaviour. it is created by ur browser. 
+window.open= open new tab
+window.close= close tab
+
+DOM- Document Object Model- tree like structure html code converted to JS object that is called a document. 
+html characters-> tags-> tokenizer-> nodes-> dom
+object modify
+BOM- Browser Object Model- all interactions with the browser except the html content ones. 
+screen size, navigation, communication establish
+
+how to change html- access-how to fetch element- on the basis of id, class, tag name, in response, single output, multiple output
+document.getElementById(); document.getElementByClassName, getElementByTagName 
+document.querySelector(#id);
+document.querySelectorAll(tag)
+$0= after selecting an element if u type $0 in console it will give u the element
+innerHTML- we can get the element- get or set the element
+innerText- however we render in UI it will show like that
+textContent= define content
+Add element- .appendChild()- child is added at the end.
+let fHeading= document.createElement(h1);
+insertAdjacentElement()- positions- before begin, after begin, before end, after end. new element
+parent.removeChild(child)
+inline css is prioritized the most because of specificity and cascading rules.
+changing css using JS- .style- get and set
+.cssText- multiple styles can be get set
+.setAttribute()- we can pick a particular element's tag or class
+.className
+.classList- get array/lsit, add, remove, toggle, contains
+
+Browser Event- announcements attached with  any action- click, double click, key press
+monitorEvents(document);
+mouseover, scroll
+play button event target
+click- event
+video run - action- location- event listener
+
+addEventListener()
+removeEventListener()
+element.addEventListener("event", function);
+
+we define the function first and not define it in the addeventlistener thing because when we want to remove it, its crucial to use the same function name but if we declare it in the addeventlistener thing then it becomes two separate objects
+
+
+Phases of an element
+capturing phase- goes through the html dom from parent to target element
+at-target phase- where the event reaches the target element--- the element on which the event was originally triggered
+bubbling phase- from target to parent to root hierarchy
+addEventListener is applied in bubbling phase
+set true-useCapture to use addEventListener to capture phase
+we can't add event listeners to target phase explicitly.
+
+Event-Object= when event triggers, then the addEventListener gets the event
+
+Default Action: to prevent anchor tag's default behaviour to open a link we can use event.preventDefault();
+
+Avoiding too many listeners--
+map the targets using parent wrapper
+
+DOMContentLoaded is an event in JavaScript that fires when the initial HTML document has been completely loaded and parsed, without waiting for external resources like images, stylesheets, or iframes to fully load.
+
+---------------------------------------------------------------------------------
+std method to measure JS performance- performance.now()
+					timestamp
+When a web page is rendered, the browser goes through different processes to display elements correctly. Two critical processes involved in rendering are Reflow and Repaint.
+
+Reflow- process of calculating positions or dimensions of element, computationally intensive
+Reflow happens when the browser recalculates the layout of the page because elements have changed in size, position, or structure.
+🔹 This is a costly process because the browser has to recalculate positions and sizes of elements and re-render the entire affected portion of the page.
+Adding, removing, or modifying DOM elements.
+Changing an element’s size (width, height, padding, margin, border).
+Changing fonts or styles that affect layout (like display: none to block).
+Resizing the browser window.
+
+Repaint- process of displaying content, element pixel by pixel
+ Repaint happens when the browser updates the appearance of an element without changing its layout.
+🔹 This means only the visual style (like color, background, shadows) needs to be updated, and no re-calculation of layout is required.
+
+What Triggers a Repaint?
+Changing color, background, visibility, or box-shadow.
+Applying CSS effects like opacity, outline, or border-color.
+
+Document Fragment- lightweight doc object
+on addition to this no reflow or repaint. it will be faster
+let fragment= document.createDocumentFragment();
+------------------------------------------------------------------------------------------
+Event Loop
+3 components=	call stack- all functions called get into call stack and then get removed when its completed.
+browser
+callback/ task queue-
+sync code- stepwise execution at the same time on the spot
+async code- not necessary stepwise. setTimeout()
+	async code handed over to browser then it is sent to callback
+event loop ensures if call stack is empty then it will execute callback by sending it to call stack
+Blocking
+-------------------------------------------------------------------------------
+promises-it is an object which represents the eventual completion, or failure of an asynchronous operation and its resulting value.
+3 states-
+pending- initial state, neither pending nor fulfilled
+fulfilled/ resolved- meaning that the operation was completed successfully
+rejected- meaning that the operation failed
+this lets u to return values like sync code
+
+let fPromise= new Promise((resolve, reject) => {
+	
+	});
+
+
+.then- we can add more methods after promise is fulfilled.
+.catch
+.finally
+promise1.then((message)=>{}).catch((error)=> {})
+
+--------------------------------------------------------------------------------
+async await- clean code, easy to debug code. we can make our code act as sync code.
+we can make it execute sequentially. used to handle promises.
+async function it will always return a promise
+fetch api- get, post, put, delete
+
+prepare url or api endpoint-> sync code
+await fetch data-> network call
+process data-> sync
+
+post request
+except get, headers and options every request has a body.
+----------------------------------------------------------------------------------------
+closure is a function which when bundled with its required data/ lexical scope/ surrounding state. in nested function, the variable reqd. is being used in terms of references. 
+
+A closure is when a function remembers the variables from its outer scope even after the outer function has finished executing.
+------------------------------------------------------------------------------------------
+react- it's a JS library used for making UI interface. makes dev faster. specifically for single page applications- dynamic updation. component based architecture. components are re-usable. uses virtual DOM.  lightweight copy of actual DOM. minimal effort to render only the needed parts to update not the entire DOM is updated every time.using props we can use data management. state management.
